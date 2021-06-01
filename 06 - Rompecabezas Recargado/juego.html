@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <script src="js/codigosDireccion.js"></script>
+    <script src="js/piezas.js"></script>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div class="col-40">
+        <div id="titulo">
+          <h1>Rompecabezas</h1>
+        </div>
+        <div id="instrucciones">
+          <h2 class="subtitulo">Instrucciones</h2>
+          <ul id="lista-instrucciones">
+          </ul>
+        </div>
+        <div id="propiedadesJuego">
+          <h2 class="subtitulo">Seleccionar</h2>
+          <h3 class="selecciones">Difucltad</h3>
+          <div id="nivelJuego" class="contenedorOpciones">
+            <div class="contenedorNivel">
+              <input class="radiobutton" type="radio" name="nivel" id='nivelFacil' value="facil" checked><span class="opciones">Fácil</span>
+            </div>
+            <div class="contenedorNivel">
+              <input class="radiobutton" type="radio" name="nivel" id='nivelMedio' value="medio"><span class="opciones">Medio</span>
+            </div>
+            <div class="contenedorNivel">
+              <input class="radiobutton" type="radio" name="nivel" id='nivelDificil' value="dificil"><span class="opciones">Difícil</span>
+            </div>
+          </div>
+          <h3 class="selecciones">Piezas por lado</h3>
+          <div id="PiezasPorLado" class="contenedorOpciones">
+            <span id="cantidadPiezasPorLado" class="opciones">Cantidad de piezas: </span><input id="inCantidadPiezasLado" type="text" maxlength="2">
+          </div>
+          <div id="contenedorBoton">
+            <button id="btnMezclar">Mezclar</button>
+          </div>
+        </div>
+
+        <div id="juego">
+          <div class="indicadoresJuego">
+            <h3 id="movimientos">Movimientos Restantes</h3>
+            <h4><span id="cantMovimientosRestantes"></span></h4>
+          </div>
+          <div class="indicadoresJuego">
+            <h3 id="cronometro">Tiempo Restante</h3><h4><span id="minutos"></span><span>:</span><span id="segundos"></span></h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-60">
+        <canvas id="canvasJuego" width="600" height="600">
+        </canvas>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p><span>Acamica:</span> Carrera Desarrollo Web Full Stack</p>
+    </div>
+
+    <script src="js/juego.js"></script>
+  </body>
+</html>

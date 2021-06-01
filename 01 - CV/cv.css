@@ -1,0 +1,148 @@
+body{
+  background-color: #DEDEDE;
+}
+
+.perfil{
+  background-color: #33425B;
+  float: left;
+  width: 25%;
+  padding: 1%;
+  margin: 1%;
+  font-family: "Verdana", sans-serif;
+}
+
+.perfil img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.perfil ul{
+  list-style-type: none;
+  margin: 25px 0px 0px 0px;
+  padding: 0;
+  clear: both;
+  font-weight: 400;
+}
+
+.perfil li{
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.perfil a{
+  color: white;
+  text-decoration: none;
+}
+
+.perfil li:hover{
+  background-color: #588D9C;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contexto{
+  background-color: #FFFFFF;
+  padding: 4%;
+  margin: 1%;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  float: right;
+  clear: right;
+  width: 60%;
+}
+
+.contexto p{
+  margin: 3px 0px;
+}
+
+.contexto p.periodo{
+  margin: 3px 0px;
+  font-style: italic;
+}
+
+.volver_arriba{
+  float: right;
+  clear: right;
+  padding: 0;
+  margin: 0% 1%;
+}
+
+.volver_arriba a{
+  padding: 0;
+  margin: 0% 1%;
+  color: #33425B;
+  font-style: oblique;
+}
+
+
+.titulo{
+  color: #607D8B;
+  border-bottom: 2px solid #282D4F;
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
+
+.presentacion_nombre{
+  color: #37474F;
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 15px 0px 2px 0px;
+  padding: 0px;
+}
+
+.puesto{
+  color: #90A4AE;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 2px 0px 5px 0px;
+  padding: 0px;
+}
+
+.listado_personales li{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  margin: 5px 0px 5px 0px;
+}
+
+.listado_personales strong{
+  color: #38817A;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.listado_exp li{
+  color: #23103A;
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 10px 0px 5px 0px;
+}
+
+.listado_portfolio
+{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.listado_portfolio li
+{
+  float: left;
+
+}
+
+.listado_portfolio img
+{
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}

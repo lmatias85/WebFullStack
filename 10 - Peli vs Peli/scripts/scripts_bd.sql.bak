@@ -1,0 +1,24 @@
+use competencias;
+
+
+drop table competencia_pelicula;
+drop table competencia;
+
+create table competencia (
+  id int unsigned auto_increment primary key,
+	nombre varchar(300),
+	genero_id int unsigned,
+	director_id int unsigned,
+	actor_id int unsigned,
+	foreign key (genero_id) references genero(id),
+	foreign key (director_id) references director(id),
+	foreign key (actor_id) references actor(id)
+);
+
+create table competencia_pelicula (
+  id int unsigned auto_increment primary key,
+	competencia_id int unsigned,
+	pelicula_id int unsigned,
+	foreign key (id_competencia) references competencia(id) on delete cascade,
+	foreign key (id_pelicula) references pelicula(id)
+);

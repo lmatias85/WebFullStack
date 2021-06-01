@@ -1,0 +1,22 @@
+body{
+  background-color: #F2f2f2;
+}
+
+h1{
+  color: #071A52;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  color: #086972;
+  font-family: 'Bellefair', serif;
+}
+
+h3{
+  color: #17B978;
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+  font-family: 'PT Sans', sans-serif;
+}

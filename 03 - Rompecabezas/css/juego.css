@@ -1,0 +1,226 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  background-image: url(../images/adventure.jpg);
+  font-family: Arial, sans-serif;
+  margin: 5% auto;
+  min-height: 100%;
+  width: 940px;
+}
+
+.col-40, .col-60 {
+  box-sizing: border-box;
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  background: #FFF;
+  color: #000;
+  padding: 30px;
+  width: 40%;
+}
+
+.col-60 {
+  /*max-width: 600px;
+  max-height: 600px;*/
+  width: 60%;
+}
+
+.col-60 #juego {
+  animation: fadein 2s;
+  height: 100%;
+  width: 100%;
+}
+
+.col-60 #juego .piezas {
+  background-color: #E84A5F;
+  vertical-align: bottom;
+}
+
+.col-60 #juego .piezas div {
+  float: left;
+  width: 33.333%;
+  height: 33.333%;
+}
+
+.col-60 #juego .piezas div img {
+  border: 1px solid grey;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-centrado img {
+  height: 60%;
+  width: 60%;
+}
+
+.col-40 h1 {
+  background-color: #E84A5F;
+  color: #FFF;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.col-40 h2 {
+  padding: 5px 0;
+  color: #E84A5F;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.col-40 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.col-40 li {
+  animation: fadein 5s;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.col-40 li::before {
+  color: #E84A5F;
+  content: "• ";
+}
+
+
+/* VENTANA Modal */
+
+.modal {
+  background-color: rgba(0,0,0,.5);
+  display: none;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal:target {
+  display: table;
+  overflow: visible;
+}
+
+.ventanaModal {
+  box-sizing: border-box;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin: 0;
+  width: 50%;
+  height: 30%;
+}
+
+.contenidoModal {
+  border: 0px solid red;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.contenidoSuperior {
+  background-color: #ce2525;
+  box-sizing: border-box;
+  border: 1px solid #ce2525;
+  height: 40%;
+  margin: 0;
+  width: 100%;
+}
+
+.contenidoInferior {
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  height: 60%;
+  margin: 0;
+  width: 100%;
+}
+
+.contenidoInferior .botonReinicio {
+  background-color: #52d681;
+  border: 1px solid #00ad7c;
+  color: white;
+  font-weight: bold;
+  margin-right: 37.5%;
+  padding: 1%;
+  text-align: center;
+  width: 25%;
+}
+
+.contenidoModal h1 {
+  box-sizing: border-box;
+  color: #eeeeee;
+  font-style: italic;
+  margin: 3%;
+  padding: 0;
+  text-align: center;
+}
+
+.contenidoModal a {
+  box-sizing: border-box;
+  clear: both;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+}
+
+.contenidoModal a:hover,
+.contenidoModal a:focus {
+  color: #393e46;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.contenidoModal p {
+  box-sizing: border-box;
+  color: #ce2525;
+  font-weight: bold;
+  margin: 3%;
+  text-align: center;
+}
+
+#footer {
+  background-color: #2E383F;
+  clear: both;
+  margin: 0;
+  padding:0;
+}
+
+#footer p{
+  color: #FFF;
+  font-size: 14px;
+  font-style: oblique;
+  margin: 0;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+#footer p span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#flecha {
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 1em;
+}
+
+#flecha::first-letter {
+  color: red;
+}
+
+#pieza9 {
+  background-color: #E84A5F;
+  min-height: 190px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "pelivspeli",
+  "version": "1.0.0",
+  "description": "Competencias de Películas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Matías Mangione",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
